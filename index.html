@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,26 +8,18 @@
   <link rel="manifest" href="./manifest.json">
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  <h1 class="main-title">PWA</h1>
+  <h1 class="main-title">PWA Sample</h1>
   <ul class="news">
-    <li class="news__item">
-      <a href="./pages/a.html">
-        <img src="./images/a.jpg" alt="" class="news__thumbnail">
-        <span class="news__title">ニュースタイトル1</span>
-      </a>
+    <li class="item">
+        <button class="btn" onclick="location.href='./pages/a.html'">定期報告</button>
     </li>
-    <li class="news__item">
-      <a href="./pages/b.html">
-        <img src="./images/b.jpg" alt="" class="news__thumbnail">
-        <span class="news__title">ニュースタイトル2</span>
-      </a>
+    <li class="item">
+      <button class="btn" onclick="location.href='./pages/b.html'">自己点検</button>
     </li>
-    <li class="news__item">
-      <a href="./pages/c.html">
-        <img src="./images/c.jpg" alt="" class="news__thumbnail">
-        <span class="news__title">ニュースタイトル3</span>
-      </a>
+    <li class="item">
+      <button class="btn" onclick="location.href='./pages/c.html'">任意自己点検</button>
     </li>
   </ul>
   <script>
@@ -39,4 +32,5 @@
     }
   </script>
 </body>
+
 </html>

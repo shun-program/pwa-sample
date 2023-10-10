@@ -6,7 +6,6 @@ const urlsToCache = [
   './index.html',
   './pages/a.html',
   './pages/b.html',
-  './pages/c.html',
   './css/style.css',
 ];
 

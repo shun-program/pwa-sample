@@ -8,9 +8,6 @@ const urlsToCache = [
   './pages/b.html',
   './pages/c.html',
   './css/style.css',
-  // './images/a.jpg',
-  './images/b.jpg',
-  './images/c.jpg',
 ];
 
 self.addEventListener('install', (event) => {

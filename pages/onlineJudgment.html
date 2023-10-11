@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PWA Sample</title>
+  <link rel="manifest" href="../manifest.json">
   <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/script.js" defer></script>
 </head>
 <body>
   <p class="results"></p>
-  <button class="btn online" onclick="location.href='./menue.html'">オンライン認証</button>
-  <button class="btn offline" onclick="location.href='./menue.html'">オフライン認証</button>
+  <button id="online" class="btn" onclick="location.href='./menue.html'">オンライン認証</button>
+  <button id="offline" class="btn" onclick="location.href='./menue.html'">オフライン認証</button>
 </body>
 </html>

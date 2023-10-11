@@ -4,7 +4,7 @@ const CACHE_NAME = 'pwa-sample-caches-v1';
 const urlsToCache = [
   './',
   '../index.html',
-  './pages/onlineJudgment.html',
+  '../pages/onlineJudgment.html',
   '../pages/menue.html',
   '../pages/a.html',
   '../pages/b.html',

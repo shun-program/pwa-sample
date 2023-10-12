@@ -1,4 +1,5 @@
-const isOnline = navigator.onLine;
+let isOnline;
+isOnline = navigator.onLine;
 
 if(isOnline === true){
   document.querySelector(".results").innerHTML = "インターネットに接続中です";

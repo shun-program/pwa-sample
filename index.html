@@ -7,11 +7,15 @@
   <title>PWA Sample</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+
 </head>
 
 <body>
   <h1 class="main-title">PWA Sample</h1>
-  <button class="btn" onclick="location.href='./onlineJudgment.html'">ログイン</button>
+  <button id="online" class="btn" onclick="location.href='./onlineJudgment.html'">ログイン</button>
+  <button id="offline" class="btn" onclick="location.href='./pages/menue.html'">ログイン</button>
+
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js').then(registration => {

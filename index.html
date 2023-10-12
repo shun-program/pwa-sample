@@ -7,7 +7,7 @@
   <title>PWA Sample</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/script.js?p=(new Date()).getTime()" async></script>
+  <!-- <script src="./js/script.js" defer></script> -->
 
 </head>
 
@@ -17,6 +17,12 @@
   <button id="offline" class="btn" onclick="location.href='./pages/menue.html'">ログイン</button>
 
   <script>
+    if (navigator.onLine === true) {
+        document.getElementById("offline").style.display = "none";
+      } else {
+        document.getElementById("online").style.display = "none";
+      }
+
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js').then(registration => {
       console.log('ServiceWorker registration successful.');

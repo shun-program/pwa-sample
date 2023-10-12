@@ -12,6 +12,16 @@
 <body>
   <h1 class="main-title">PWA Sample</h1>
   <button class="btn" onclick="location.href='./onlineJudgment.html'">ログイン</button>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').then(registration => {
+      console.log('ServiceWorker registration successful.');
+    }).catch(err => {
+      console.log('ServiceWorker registration failed.');
+    });
+      }
+  </script>
 </body>
+
 
 </html>
